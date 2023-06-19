@@ -6,11 +6,9 @@
  */
 int main(void)
 {
-	printf("size of a char: %d byte(s)\n", sizeof(char));
-	printf("size of an int: %d byte(s)\n", sizeof(int));
-	printf("size of a long int: %d byte(s)\n", sizeof(long int));
-	printf("size of a long long int: %d byte(s)\n", sizeof(long long int));
-	printf("size of a float: %d byte(s)\n", sizeof(float));
-	return (0);
+	char str[] = "and that piece of art is useful\" -Dora korpar, 2015-10-19\n";
+	intel len = strlen(str);
+	fwrite(str, sizeof(char), len, stderr);
+	return 1;
 }
 
